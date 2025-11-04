@@ -200,7 +200,7 @@ header {
   font-family: inherit;
   outline: none !important;
   box-shadow: none !important;
-  -webkit-appearance: none;
+  appearance: none;
 }
 
 .search input:focus,
@@ -225,6 +225,13 @@ header {
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+/* 子标题容器 - 调整缩进 */
+.sidebar-nav ul ul ul {
+  margin-left: 1.5rem; /* 减小左侧缩进，让子项更靠近父项 */
+  margin-top: 0.3rem;
+  margin-bottom: 0.5rem;
 }
 
 .sidebar-nav li {
