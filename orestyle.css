@@ -1,0 +1,215 @@
+/* 按钮样式 - 整合所有按钮类型 */
+.btn, .sidebar_btn {
+  cursor: pointer;
+  font-family: "NotoSans Bold", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #1E1E1F;
+  transition: all 0.1s ease;
+  position: relative;
+}
+
+/* 按钮点击效果 */
+.btn:active:not(.disabled_btn):not(.disabled), 
+.sidebar_btn:active:not(.disabled_btn) {
+  height: 36px;
+  margin-top: 4px;
+}
+
+/* 按钮尺寸 */
+.extra_small_btn {
+  width: 100px;
+}
+
+.small_btn {
+  width: 130px;
+}
+
+.middle_btn {
+  width: 200px;
+}
+
+.large_btn {
+  width: 272px;
+}
+
+/* 普通按钮 - 立体效果通过多层阴影实现 */
+.normal_btn, .btn-default {
+  background-color: #D0D1D4;
+  box-shadow: 
+    inset 0 -4px #58585A, 
+    inset 3px 3px rgba(255, 255, 255, 0.6), 
+    inset -3px -7px rgba(255, 255, 255, 0.4);
+  color: #000000 !important;
+  padding-bottom: 6px;
+}
+
+.normal_btn:hover, .btn-default:hover {
+  background-color: #B1B2B5;
+  box-shadow: 
+    inset 0 -4px #58585A, 
+    inset 3px 3px rgba(255, 255, 255, 0.8), 
+    inset -3px -7px rgba(255, 255, 255, 0.6);
+  text-decoration: underline;
+}
+
+.normal_btn:active, .btn-default:active:not(.disabled) {
+  background-color: #B1B2B5;
+  box-shadow: 
+    inset 3px 3px rgba(255, 255, 255, 0.8), 
+    inset -3px -3px rgba(255, 255, 255, 0.6);
+}
+
+/* 绿色按钮 */
+.green_btn, .btn-success {
+  background-color: #3C8527;
+  box-shadow: 
+    inset 0 -4px #1D4D13, 
+    inset 3px 3px rgba(255, 255, 255, 0.2), 
+    inset -3px -7px rgba(255, 255, 255, 0.1);
+  color: #FFFFFF !important;
+  padding-bottom: 6px;
+}
+
+.green_btn:hover, .btn-success:hover {
+  background-color: #2A641C;
+  box-shadow: 
+    inset 0 -4px #1D4D13, 
+    inset 3px 3px rgba(255, 255, 255, 0.4), 
+    inset -3px -7px rgba(255, 255, 255, 0.3);
+  text-decoration: underline;
+}
+
+.green_btn:active, .btn-success:active:not(.disabled) {
+  background-color: #1D4D13;
+  box-shadow: 
+    inset 3px 3px rgba(255, 255, 255, 0.4), 
+    inset -3px -3px rgba(255, 255, 255, 0.3);
+}
+
+/* 红色按钮 */
+.red_btn {
+  background-color: #C33636;
+  box-shadow: 
+    inset 0 -4px #AD1D1D, 
+    inset 3px 3px rgba(255, 255, 255, 0.2), 
+    inset -3px -7px rgba(255, 255, 255, 0.1);
+  color: #FFFFFF !important;
+  padding-bottom: 6px;
+  height: 40px;
+}
+
+.red_btn:hover {
+  background-color: #C02D2D;
+  box-shadow: 
+    inset 0 -4px #AD1D1D, 
+    inset 3px 3px rgba(255, 255, 255, 0.5), 
+    inset -3px -7px rgba(255, 255, 255, 0.4);
+  text-decoration: underline;
+}
+
+.red_btn:active {
+  background-color: #AD1D1D;
+  box-shadow: 
+    inset 3px 3px rgba(255, 255, 255, 0.5), 
+    inset -3px -3px rgba(255, 255, 255, 0.4);
+}
+
+/* 禁用按钮 */
+.disabled_btn {
+  background-color: #D0D1D4;
+  border: 2px solid #8C8D90;
+  box-shadow: inset 0 -4px #B1B2B5;
+  color: #48494A !important;
+  cursor: not-allowed;
+  padding-bottom: 6px;
+  height: 40px;
+}
+
+/* 侧边栏按钮 */
+.sidebar_btn {
+  background-color: #48494A;
+  border: 2px solid #131313;
+  box-shadow: 
+    inset -1px -1px #1E1E1F, 
+    inset 1px 1px #1E1E1F, 
+    inset -2px -2px #313233, 
+    inset 2px 2px #6D6D6E;
+  color: #FFFFFF !important;
+  height: 40px;
+  padding-bottom: 2px;
+  width: 140px;
+}
+
+.sidebar_btn:hover {
+  background-color: #67686A;
+  border: 2px solid #FFFFFF;
+  box-shadow: unset;
+  text-decoration: underline;
+}
+
+/* 带图标的按钮 */
+.button_img {
+  width: 14px;
+  margin: 0 4px;
+}
+
+/* 徽章样式 */
+.badge_area {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.badge {
+  height: 10px;
+  width: 10px;
+  margin-right: 8px;
+  border: 1px solid #1E1E1F;
+}
+
+.green_badge {
+  background-color: #6CC349;
+}
+
+.blue_badge {
+  background-color: #8CB3FF;
+}
+
+.yellow_badge {
+  background-color: #FFE866;
+}
+
+.red_badge {
+  background-color: #F46D6D;
+}
+
+/* 提示条样式 */
+.banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "NotoSans Bold", sans-serif;
+  min-height: 30px;
+  padding: 10px;
+  text-align: center;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.neutral_banner {
+  background-color: #1E1E1F;
+  color: #FFFFFF !important;
+}
+
+.information_banner {
+  background-color: #2E6BE5;
+  color: #FFFFFF !important;
+}
+
+.important_banner {
+  background-color: #FFE866;
+  color: #000000 !important;
+  font-weight: bolder;
+}
