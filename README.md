@@ -1,15 +1,23 @@
 # oresify
 oresify是适用于docsify的oreui，可以创建oreui里的一些元素在你的文章里面，同时整个博客主题也是oreui
+# orestyle
+orestyle是将oresify元素提取出来制作的单独样式，可以在html或md中引用，不改变网站主体样式，oreui的元素样式也是保留的
 
 # 导入
+## oresify
 使用以下标签导入oresify
 ```
 <link rel="stylesheet" href="oresify.css">
 ```
+## orestyle
+使用以下标签导入orestyle
+```
+<link rel="stylesheet" href="orestyle.css">
+```
 
-> **注意：oresify.css要放在网页根目录**
+> **注意：oresify.css和orestyle.css要放在网页根目录**
 # 添加元素
-下面是oreui元素添加的示例
+下面是oreui元素添加的示例(oresify和orestyle通用)
 ```
 <header>
     <div class="header_title">OreUI 立体按钮展示</div>
