@@ -229,7 +229,7 @@ header {
 
 /* 子标题容器 - 调整缩进 */
 .sidebar-nav ul ul ul {
-  margin-left: 1.5rem; /* 减小左侧缩进，让子项更靠近父项 */
+  margin-left: 1rem; /* 减小左侧缩进，让子项更靠近父项 */
   margin-top: 0.3rem;
   margin-bottom: 0.5rem;
 }
@@ -605,4 +605,5 @@ tr:hover td {
   .content {
     padding: 1rem;
   }
+
 }
